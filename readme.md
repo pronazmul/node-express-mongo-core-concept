@@ -25,4 +25,5 @@
 *  body-parser: To handle HTTP POST request in Express.js version 4 and above, you need to install middleware module called body-parser. body-parser extract the entire body portion of an incoming request stream and exposes it on req.body.
 * 	cors: CORS is shorthand for Cross-Origin Resource Sharing. It is a mechanism to allow or restrict requested resources.
 * 	env: Node. js provides a global variable process. env , an object that contains all environment variables available to the user running the application.
-*  
+*  nodemon: In Node. js, you need to restart the process to make changes take effect. nodemon is a command-line interface (CLI) that wraps your Node app, watches the file system, and automatically restarts the process.
+* express-fileupload: Express middleware for uploading files. It parses multipart/form-data requests, extracts the files if available, and make them available under req. files property.
