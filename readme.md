@@ -14,7 +14,7 @@
 * 	Postman: For Working with various request method & practice without user interface.
 
 ## Installation Commands
-```sh
+```javascript
         npm init
         npm install express mongodb body-parser cors dotenv
         npm install nodemon --save-dev
@@ -27,3 +27,17 @@
 * 	<strong>env</strong>: Node. js provides a global variable process. env , an object that contains all environment variables available to the user running the application.
 *  <strong>nodemon</strong>: In Node. js, you need to restart the process to make changes take effect. nodemon is a command-line interface (CLI) that wraps your Node app, watches the file system, and automatically restarts the process.
 * <strong>express-fileupload</strong>: Express middleware for uploading files. It parses multipart/form-data requests, extracts the files if available, and make them available under req. files property.
+
+## Initialize Appliaction
+```javascript
+const express = require('express')
+const app = express()
+const port = 5000
+const bodyParser = require('body-parser')
+const cors = require('cors')
+app.use(bodyParser.json())
+app.use(cors())
+
+app.get('/', (req, res) => res.send("Welcome Programmer Your API Is Ready for Operation"))
+app.listen(port)
+```
